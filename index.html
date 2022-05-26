@@ -432,20 +432,20 @@
           </ul>
         </div>
 
-        <div>
+        <div class="footer-form">
           <span class="join">Подпишитесь на рассылку</span>
           <!-- FORM-FOOTER -->
-          <form>
+          <form class="footer-form-action">
             <label class="email-send">
               <input class="send-input" type="email" placeholder="E-mail" name="email" />
             </label>
             <button type="submit" class="order-button">
-              <div class="send-btn">
-                <span class="send-text">Подписаться</span>
+              <span class="send-text"
+                >Подписаться
                 <svg class="send" width="24" height="24">
                   <use href="./images/svg/icon.svg#send"></use>
                 </svg>
-              </div>
+              </span>
             </button>
           </form>
         </div>
@@ -456,7 +456,9 @@
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <form class="form" autocomplete="off">
-          <div class="form-title">Оставьте свои данные, мы вам перезвоним</div>
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+
+          <!-- FORM-MODAL -->
           <div class="form-field">
             <label class="modal-label" for="username">Имя </label>
             <input type="text" name="userName" id="username" class="modal-input" />
@@ -464,7 +466,7 @@
               <use href="./images/svg/icon.svg#person-black"></use>
             </svg>
           </div>
-          <!-- FORM-MODAL -->
+
           <div class="form-field">
             <label class="modal-label" for="phone">Телефон</label>
             <input type="tel" name="phone" id="phone" class="modal-input" />
@@ -481,7 +483,7 @@
             </svg>
           </div>
 
-          <div class="form-field">
+          <div class="form-field form-textarea">
             <label class="modal-label" for="comment">Комментарий</label>
             <textarea
               class="modal-textarea"
@@ -491,9 +493,13 @@
             ></textarea>
           </div>
           <div class="license-list">
-            <label class="license-label"
-              ><input class="checkbox-input" type="checkbox" name="license" />
-              <span class="checkbox-icon"></span>
+            <label class="license-label">
+              <input class="checkbox-input visually-hidden" type="checkbox" name="license" />
+              <span class="checkbox-icon">
+                <svg class="checkbox-image" width="16" height="15">
+                  <use href="./images/svg/icon.svg#icon-check"></use>
+                </svg>
+              </span>
               Соглашаюсь с рассылкой и принимаю
               <a class="license-link" href="#">Условия договора</a>
             </label>
