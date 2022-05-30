@@ -673,7 +673,6 @@ img {
 /* FORM */
 
 .form-field {
-    position: relative;
     margin-bottom: 10px;
 }
 
@@ -711,7 +710,8 @@ img {
     fill: var(--accent-color);
 }
 .modal-label {
-    display: flex;
+    display: block;
+    width: max-content;
     margin-bottom: 4px;
     font-family: 'Roboto';
     line-height: 1.6;
@@ -720,11 +720,14 @@ img {
     letter-spacing: var(--letter-spacing-input);
 
 }
+.input-wrapper {
+    position: relative;
+}
 .input-image {
     position: absolute;
     top: 50%;
     left: 12px;
-    transform: translateY(10%);
+    transform: translateY(-50%);
     fill: var(--heading-color);
     transition: var(--duration) var(--timing-function);
 }
@@ -788,6 +791,10 @@ textarea::placeholder {
     fill: var(--white-color);
 }
 /* ///////////////////////////////////////////////////////////////////////// */
+
+
+
+
 
 
 
